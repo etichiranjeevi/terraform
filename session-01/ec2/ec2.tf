@@ -11,7 +11,7 @@ resource "aws_instance" "web" {
 resource "aws_security_group" "robo-all" { # This is terraform name,for terraform reference only
      name = var.sg-name # This is for aws only
      description = var.sg-description
-     ingress {
+     ingress {    
         description = "allow all ports"
         from_port = var.inbound-from-port   
         to_port = 0
